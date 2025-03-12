@@ -1,3 +1,6 @@
+import { Product } from '../types/index.d';
+
+
 export const PRODUCTS_LIST: Product[] = [
     {
       id: '1',
