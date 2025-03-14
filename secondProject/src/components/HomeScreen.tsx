@@ -5,12 +5,12 @@ import { Button, StyleSheet, Text, View } from 'react-native';
 import { RootStackParamsList } from '../RootNavigator';
 
 
-type HOmeScreenNavigationProp = StackNavigationProp<RootStackParamsList,'Home'>
+type HomeScreenNavigationProp = StackNavigationProp<RootStackParamsList,'Home'>
 
 
 export const HomeScreen: React.FC = () => {
 
-    const navigation = useNavigation<HOmeScreenNavigationProp>();
+    const navigation = useNavigation<HomeScreenNavigationProp>();
 
     return (
         <View style={styles.container}>
