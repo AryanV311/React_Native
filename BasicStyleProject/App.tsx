@@ -1,24 +1,26 @@
 
-import { SafeAreaView, ScrollView } from 'react-native';
 import React from 'react';
-import FlatCards from './Components/FlatCards';
-import ElevatedCards from './Components/ElevatedCards';
-import FancyCard from './Components/FancyCard';
-import ActionCard from './Components/ActionCard';
-import ContactList from './Components/ContactList';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+import Home from './Screen/Home';
+import { NavigationContainer } from '@react-navigation/native';
+import BackGroundChanger from './Components/BackGroundChanger';
+
+export type RootStackParamsList = {
+  Home:undefined;
+  BackGroundChanger:undefined
+}
+
+const Stack = createNativeStackNavigator<RootStackParamsList>();
 
 const App = () => {
   return (
-    <SafeAreaView>
-      <ScrollView>
-        <FlatCards />
-        <ElevatedCards />
-        <FancyCard />
-        <FancyCard />
-        <ActionCard />
-        <ContactList />
-      </ScrollView>
-    </SafeAreaView>
+   <NavigationContainer>
+    <Stack.Navigator initialRouteName="Home">
+      <Stack.Screen name="Home" component={Home} options={{title: 'Styling Components'}} />
+      <Stack.Screen name="BackGroundChanger" component={BackGroundChanger} options={{title: 'Background Changer Page'}} />
+    </Stack.Navigator>
+   </NavigationContainer>
   );
 };
 
