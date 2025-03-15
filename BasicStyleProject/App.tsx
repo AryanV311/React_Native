@@ -1,9 +1,11 @@
-import { SafeAreaView, ScrollView, StyleSheet } from 'react-native';
+
+import { SafeAreaView, ScrollView } from 'react-native';
 import React from 'react';
 import FlatCards from './Components/FlatCards';
 import ElevatedCards from './Components/ElevatedCards';
 import FancyCard from './Components/FancyCard';
 import ActionCard from './Components/ActionCard';
+import ContactList from './Components/ContactList';
 
 const App = () => {
   return (
@@ -14,16 +16,12 @@ const App = () => {
         <FancyCard />
         <FancyCard />
         <ActionCard />
+        <ContactList />
       </ScrollView>
     </SafeAreaView>
   );
 };
 
-// const styles  = StyleSheet.create({
-//   container:{
-//     backgroundColor:'#616161',
-//   }
-// });
 
 export default App;
 
