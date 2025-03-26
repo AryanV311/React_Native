@@ -17,9 +17,24 @@ const Screens:Data[] = [
         screen:'ModalView',
     },
     {
-        id:1,
+        id:2,
         title:'Pull To refresh Page',
         screen:'RefreshPage',
+    },
+    {
+        id:3,
+        title:'Data Fetching',
+        screen:'DataFetching',
+    },
+    {
+        id:4,
+        title:'Axios Demo',
+        screen:'AxiosData',
+    },
+    {
+        id:5,
+        title:'Theme Screen',
+        screen:'ThemeScreen',
     },
 ];
 

@@ -8,6 +8,7 @@
 import { NavigationContainer } from '@react-navigation/native';
 import React from 'react';
 import RootNavigator from './src/RootNavigator';
+import { ThemeProvider } from './src/Context/ThemeContext';
 
 
 
@@ -15,9 +16,11 @@ import RootNavigator from './src/RootNavigator';
 function App(): React.JSX.Element {
 
   return (
-    <NavigationContainer>
+    <ThemeProvider>
+      <NavigationContainer>
       <RootNavigator />
     </NavigationContainer>
+    </ThemeProvider>
   );
 }
 

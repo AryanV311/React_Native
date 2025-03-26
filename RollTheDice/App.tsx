@@ -59,7 +59,7 @@ function App(): React.JSX.Element {
         break;
     }
 
-  }
+  };
 
   return (
     <View style={styles.container}>

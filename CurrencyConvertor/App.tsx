@@ -70,7 +70,7 @@ function App(): React.JSX.Element {
           }
         </View>
         <View style={styles.bottomContainer}>
-          <FlatList numColumns={3} data={currencyByRupee} keyExtractor={item => item.nam} renderItem={({item}) => (
+          <FlatList numColumns={3} data={currencyByRupee} keyExtractor={item => item.name} renderItem={({item}) => (
             <Pressable onPress={() => pressedButton(item)} style={[styles.button, targetCurrency === item.name && styles.selected]}>
               <CurrencyButton {...item} />
             </Pressable>
