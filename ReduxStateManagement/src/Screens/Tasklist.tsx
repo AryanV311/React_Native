@@ -66,8 +66,8 @@ const TaskList = () => {
       </TouchableOpacity>
       </TouchableOpacity>
     </Animated.View>
-    )
-  }
+    );
+  };
 
   useEffect(() => {
     if(status === 'idle'){
@@ -246,7 +246,6 @@ const styles = StyleSheet.create({
     color:'#fff',
     fontWeight:'bold',
   },
-  
 });
 
 export default TaskList;
